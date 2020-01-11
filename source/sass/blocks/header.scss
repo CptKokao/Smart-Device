@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(255, 115, 0);
+}
+
+@media (max-width: $tablet-width) {
+  body {
+    background-color: rgb(94, 255, 0);
+  }
+}
+
+@media (max-width: $mobile-width) {
+  body {
+    background-color: rgb(98, 0, 255);
+  }
+}
+
