@@ -1,16 +1,17 @@
-body {
-  background-color: rgb(255, 115, 0);
+.header {
+  min-height: 877px;
+  background: #1B2D37 url("../img/bg-header.jpg") no-repeat center;
 }
 
-@media (max-width: $tablet-width) {
-  body {
-    background-color: rgb(94, 255, 0);
-  }
-}
+// @media (max-width: $tablet-width) {
+//   body {
+//     background-color: rgb(94, 255, 0);
+//   }
+// }
 
-@media (max-width: $mobile-width) {
-  body {
-    background-color: rgb(98, 0, 255);
-  }
-}
+// @media (max-width: $mobile-width) {
+//   body {
+//     background-color: rgb(98, 0, 255);
+//   }
+// }
 

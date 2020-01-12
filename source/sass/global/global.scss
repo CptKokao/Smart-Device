@@ -1,6 +1,14 @@
-body {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+html {
+  box-sizing: border-box;
 }
 
-$blue: #00b2ff;
-$bg-grey: #c4c4c4;
+body {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  box-sizing: border-box;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
