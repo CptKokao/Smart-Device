@@ -1,7 +1,8 @@
 .header {
   min-height: 877px;
   background: #1b2d37 url("../img/bg-header.jpg") center no-repeat;
-  background-size: cover; // ???
+  background-size: cover;
+  overflow: hidden;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -45,20 +46,15 @@
 }
 
 .header__call {
+  @include btn();
+
   width: 180px;
+  font-size: 14px;
+  line-height: 16px;
   margin-right: 5px;
   padding: 11px 0;
   border: 1px solid #ffffff;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.header__call-text {
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 0.05em;
+  background-color: transparent;
 }
 
 // главная часть
@@ -97,16 +93,9 @@
 }
 
 .btn {
-  display: inline-block;
-  border: 1px solid $blue;
-  background-color: $blue;
-  border-radius: 5px;
+  @include btn();
+
   width: 405px;
-  text-align: center;
-  padding: 15px 0;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 0.05em;
   margin-left: 98px;
   margin-top: 23px;
 }
@@ -133,26 +122,9 @@
   font-size: 14px;
 }
 
-// .header__btn {
-//   width: 405px;
-//   border: 1px solid $blue;
-//   border-radius: 5px;
-//   text-align: center;
-// }
-
-
 @media (max-width: $tablet-width) {
   .header {
     min-height: 684px;
-    background: #1b2d37 url("../img/bg-header-tablet.jpg") center no-repeat;
-    background-size: cover; // ???
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .header {
-      background: #1b2d37 url("../img/bg-header-tablet@2x.jpg") center no-repeat;
-      background-size: cover;
-    }
   }
 
   .header__container {
@@ -231,16 +203,7 @@
 
 @media (max-width: $mobile-width) {
   .header {
-    min-height: 645px;
-    background: #1b2d37 url("../img/bg-header-mobile.jpg") center no-repeat;
-    background-size: cover;
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .header {
-      background: #1b2d37 url("../img/bg-header-mobile@2x.jpg") center no-repeat;
-      background-size: cover;
-    }
+    min-height: 650px;
   }
 
   .header__container {
@@ -257,13 +220,15 @@
 
   // главная часть
   .header__description {
-    width: 277px;
-    margin-top: 226px;
-    margin-left: 15px;
+    width: 290px;
+    margin: 0 auto;
+    margin-top: 225px;
   }
 
   .header__title {
+    position: relative;
     font-size: 40px;
+    z-index: 1;
   }
 
   .header__text {
@@ -272,7 +237,6 @@
     font-size: 16px;
     margin-top: 25px;
     line-height: 26px;
-    z-index: 1;
 
     &::after {
       top: 18px;
@@ -284,15 +248,7 @@
   }
 
   .btn__mobile {
-    display: inline-block;
-    border: 1px solid $blue;
-    background-color: $blue;
-    border-radius: 5px;
-    text-align: center;
-    padding: 15px 0;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 0.05em;
+    @include btn();
 
     width: 287px;
     margin-left: 3px;

@@ -1,0 +1,12 @@
+@mixin btn() {
+  display: inline-block;
+  border: 1px solid $blue;
+  background-color: $blue;
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
