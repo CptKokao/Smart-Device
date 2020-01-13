@@ -10,3 +10,7 @@
   letter-spacing: 0.05em;
   cursor: pointer;
 }
+
+@mixin hover() {
+  opacity: 0.7;
+}
