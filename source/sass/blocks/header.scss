@@ -3,6 +3,7 @@
   background: #1b2d37 url("../img/bg-header.jpg") center no-repeat;
   background-size: cover;
   overflow: hidden;
+  z-index: 0;
 
   @media (max-width: $tablet-width) {
     min-height: 684px;
@@ -25,7 +26,6 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
-  outline: 1px solid red; // времено
 
   @media (max-width: $tablet-width) {
     padding-top: 15px;
