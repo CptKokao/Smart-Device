@@ -29,7 +29,6 @@ a {
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
@@ -38,25 +37,11 @@ a {
   }
 
   @media (max-width: $mobile-width) {
-    padding-left: 13px;
-    padding-right: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
-.container--fliud {
+.container--big {
   max-width: 1440px;
-  padding-left: 20px;
-  padding-right: 10px;
-
-  margin: 0 auto;
-
-  @media (max-width: $tablet-width) {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }

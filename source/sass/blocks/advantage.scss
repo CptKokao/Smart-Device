@@ -1,5 +1,5 @@
 .advantage {
-  min-height: 1257px;
+  // min-height: 1257px;
   background: url("../img/bg-about.jpg") center no-repeat;
   background-size: cover;
   z-index: 0;
@@ -12,26 +12,26 @@
   }
 
   @media (max-width: $tablet-width) {
-    min-height: 1115px;
+    // min-height: 1115px;
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 1790px;
+    // min-height: 1790px;
   }
 }
 
 .advantage__wrapper {
   padding-top: 93px;
-  padding-bottom: 95px;
+  padding-bottom: 125px;
 
   @media (max-width: $tablet-width) {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 18px;
-    padding-bottom: 15px;
+    padding-bottom: 60px;
   }
 }
 
@@ -91,7 +91,7 @@
     margin-right: 0;
     margin-bottom: 20px;
     padding-left: 20px;
-    padding-right: 15px;
+    padding-right: 10px;
     padding-bottom: 10px;
     min-height: 232px;
   }
