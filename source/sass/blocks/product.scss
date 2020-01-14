@@ -1,0 +1,197 @@
+.product {
+  background-color: #1b2d37;
+  min-height: 938px;
+  padding-top: 60px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 26px;
+  }
+}
+
+.product__title {
+  font-size: 36px;
+  font-weight: normal;
+
+  @media (max-width: $tablet-width) {
+    max-width: 620px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 28px;
+    padding-left: 10px;
+  }
+}
+
+.product__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+
+  @media (max-width: $tablet-width) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 47px;
+  }
+}
+
+.product__link {
+  display: contents;
+}
+
+.product__item {
+  width: calc(33% - 17px);
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-left: 45px;
+
+  &:hover {
+    @include hover();
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    height: 256px;
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 10px;
+    padding-left: 37px;
+    margin-bottom: 30px;
+  }
+}
+
+.product__item--production {
+  background: url("../img/production.png") center no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .header {
+      background: url("../img/production@2x.png") center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background: url("../img/production-tablet.png") center no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      .header {
+        background: url("../img/production-tablet@2x.png") center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background: url("../img/production-mobile.png") center no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      .header {
+        background: url("../img/production-mobile@2x.png") center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+.product__item--mounting {
+  background: url("../img/mounting.png") center no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .header {
+      background: url("../img/mounting@2x.png") center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background: url("../img/mounting-tablet.png") center no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      .header {
+        background: url("../img/mounting-tablet@2x.png") center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background: url("../img/mounting-mobile.png") center no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      .header {
+        background: url("../img/mounting-mobile@2x.png") center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+.product__item--extra {
+  background: url("../img/extra.png") center no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .header {
+      background: url("../img/extra@2x.png") center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background: url("../img/extra-tablet.png") center no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      .header {
+        background: url("../img/extra-tablet@2x.png") center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background: url("../img/extra-mobile.png") center no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      .header {
+        background: url("../img/extra-mobile@2x.png") center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+.product__item-title {
+  width: 170px;
+  font-size: 20px;
+  line-height: 30px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 10px;
+  }
+}
+
+.product__item-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  width: 63px;
+  height: 63px;
+  background: $blue;
+}
