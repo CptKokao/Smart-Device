@@ -35,6 +35,10 @@
   color: $white;
 }
 
+.logo__title--black {
+  color: #203c42;
+}
+
 .logo__text {
   margin: 0;
   font-family: $roboto;
@@ -46,4 +50,8 @@
   @media (max-width: $tablet-width) {
     opacity: 1;
   }
+}
+
+.logo__text--black {
+  color: #788891;
 }

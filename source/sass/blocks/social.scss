@@ -1,0 +1,34 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 55px;
+  width: 110px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 20px;
+  }
+}
+
+.social__text {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    font-family: $ptMono;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #1b2d37;
+    opacity: 0.5;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 28px;
+  }
+}
