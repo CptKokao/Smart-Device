@@ -1,5 +1,5 @@
 .nav {
-  color: #1B2D37;
+  color: $grey;
   position: relative;
 }
 
@@ -9,48 +9,6 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: inherit;
-
-}
-
-.btn__plus {
-  display: none;
-
-  @media (max-width: $mobile-width) {
-    display: block;
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    top: 1px;
-    right: 1px;
-    // background-color: transparent;
-    background: transparent url("../img/icon-plus.svg") center no-repeat;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
-}
-
-.btn__minus {
-  display: none;
-
-  @media (max-width: $mobile-width) {
-    display: block;
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    top: 1px;
-    right: 1px;
-    // background-color: transparent;
-    background: transparent url("../img/icon-minus.svg") center no-repeat;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
-}
-
-.btn__position {
-  top: 43px;
-  right: 7px;
 }
 
 .nav__list {

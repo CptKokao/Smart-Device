@@ -2,14 +2,14 @@
   min-height: 875px;
   padding-bottom: 30px;
   padding-top: 20px;
-  background: #1b2d37 url("../img/bg-header.jpg") center no-repeat;
+  background: $grey url("../img/bg-header.jpg") center no-repeat;
   background-size: cover;
   overflow: hidden;
   z-index: 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .header {
-      background: #1b2d37 url("../img/bg-header@2x.jpg") center no-repeat;
+      background: $grey url("../img/bg-header@2x.jpg") center no-repeat;
       background-size: cover;
     }
   }
@@ -63,10 +63,6 @@
   @media (max-width: $tablet-width) {
     margin-right: 0;
   }
-
-  @media (max-width: $mobile-width) {
-    // margin-right: 15px;
-  }
 }
 
 .header__email-img {
@@ -105,7 +101,6 @@
   width: 180px;
   font-size: 14px;
   line-height: 16px;
-  // margin-right: 5px;
   padding: 11px 0;
   border: 1px solid $white;
   background-color: transparent;
