@@ -8,10 +8,38 @@
   <link rel="stylesheet" href="/css/style.min.css">
 </head>
 <body>
+  <div class="overlay hidden"></div>
+  <div class="popup">
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Закажите звонок</h2>
+      <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <div class="close"></div>
+      <form class="form popup__form" action="">
+        <div class="form__group">
+          <input type="text" placeholder="Имя">
+        </div>
+        <div class="form__group">
+          <input type="text" placeholder="Телефон">
+        </div>
+        <div class="form__group form__group--big">
+          <textarea name="" id="" placeholder="Ваш вопрос"></textarea>
+        </div>
+        <div class="form__group">
+          <button class="form__btn">Задать вопрос</button>
+        </div>
+        <div class="form__group">
+          <input id="checkbox" type="checkbox">
+          <label for="checkbox"></label>
+          <p class="form__checkbox-text">Я согласен на обработку  персональных данных</p>
+        </div>
+      </form>
+    </div>
+  </div>
   <div style="display:none">
     <include src="build/img/sprite_auto.svg"></include>
   </div>
   <header class="header">
+
     <div class="container container--big">
       <div class="header__container">
 
@@ -159,30 +187,31 @@
           <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
           <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
 
-          <form class="feedback__form" action="">
-            <div class="feedback__group">
+          <form class="form" action="">
+            <div class="form__group">
               <input type="text" placeholder="Имя">
             </div>
-            <div class="feedback__group">
+            <div class="form__group">
               <input type="text" placeholder="Телефон">
             </div>
-            <div class="feedback__group feedback__group--big">
+            <div class="form__group form__group--big">
               <textarea name="" id="" placeholder="Ваш вопрос"></textarea>
             </div>
-            <div class="feedback__group">
-              <button class="feedback__form-btn">Задать вопрос</button>
+            <div class="form__group">
+              <button class="form__btn">Задать вопрос</button>
             </div>
-            <div class="feedback__group">
+            <div class="form__group">
               <input id="checkbox" type="checkbox">
               <label for="checkbox"></label>
-              <p class="feedback__checkbox-text">Я согласен на обработку  персональных данных</p>
+              <p class="form__checkbox-text">Я согласен на обработку  персональных данных</p>
             </div>
-
           </form>
 
         </div>
       </div>
     </section>
+
+
   </main>
   <footer>
     <div class="footer container--big footer__container">
@@ -295,6 +324,8 @@
     </div>
 
   </footer>
+
+
   <script src="/js/script.js"></script>
   <script src="/js/vendor.js"></script>
 </body>

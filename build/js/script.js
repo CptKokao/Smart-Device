@@ -27,3 +27,20 @@ btnContact.addEventListener('click', function () {
     contactHidden.style.display = 'none'
   }
 });
+
+var popup = document.querySelector('.popup');
+var callBtn = document.querySelector('.header__call');
+var body = document.querySelector('body');
+var overlay = document.querySelector('.overlay');
+callBtn.addEventListener('click', function () {
+  console.log(1234)
+  if (popup.style.display = 'none') {
+    popup.style.display = 'flex';
+    body.style.overflow = 'hidden';
+    overlay.classList.remove('hidden');
+  } else {
+    popup.style.display = 'none';
+    body.style.overflow = 'auto';
+    overlay.classList.add('hidden');
+  }
+})
