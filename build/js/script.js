@@ -28,19 +28,43 @@ btnContact.addEventListener('click', function () {
   }
 });
 
-var popup = document.querySelector('.popup');
+var popup = document.querySelector('.modal');
 var callBtn = document.querySelector('.header__call');
 var body = document.querySelector('body');
 var overlay = document.querySelector('.overlay');
+var close = document.querySelector('.modal__close');
+console.log(overlay)
+
 callBtn.addEventListener('click', function () {
-  console.log(1234)
   if (popup.style.display = 'none') {
     popup.style.display = 'flex';
     body.style.overflow = 'hidden';
-    overlay.classList.remove('hidden');
+    overlay.classList.remove('visually-hidden');
   } else {
     popup.style.display = 'none';
     body.style.overflow = 'auto';
-    overlay.classList.add('hidden');
+    overlay.classList.add('visually-hidden');
   }
 })
+
+close.addEventListener('click', function () {
+    popup.style.display = 'none';
+    body.style.overflow = 'auto';
+    overlay.classList.add('visually-hidden');
+})
+
+overlay.addEventListener('click', function (evt) {
+    popup.style.display = 'none';
+    body.style.overflow = 'auto';
+    overlay.classList.add('visually-hidden');
+})
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.code === 'Escape') {
+    popup.style.display = 'none';
+    body.style.overflow = 'auto';
+    overlay.classList.add('visually-hidden');
+
+  }
+})
+

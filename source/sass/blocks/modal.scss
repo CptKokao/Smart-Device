@@ -1,0 +1,94 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 25;
+  width: 490px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.modal__wrapper {
+  background-color: $blue;
+  width: 490px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  // min-height: 605px;
+}
+
+.modal__title {
+  font-size: 28px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.modal__text {
+  font-family: $ptMono;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.modal__form input {
+  width: 100%;
+}
+
+.modal__form textarea {
+  height: 104px;
+  margin-bottom: 30px;
+}
+
+.modal__form button {
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.modal__form .form__group {
+  width: 100%;
+  padding-left: 30px;
+}
+
+// крестик закрытия
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 10px;
+    width: 26px;
+    height: 2px;
+    background: $white;
+  }
+}
+
+/* Прячем галку по умолчанию */
+.form input[type="checkbox"] + label::after {
+  content: none;
+}
+
+/* Показываем галку по состоянию checked */
+.form input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+

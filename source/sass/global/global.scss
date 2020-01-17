@@ -47,10 +47,6 @@ a {
   margin: 0 auto;
 }
 
-.hidden {
-  display: none;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -59,4 +55,17 @@ a {
   z-index: 10;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
