@@ -3,62 +3,45 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 60px;
-
-  @media (max-width: $tablet-width) {
-    justify-content: space-between;
-  }
-
-  @media (max-width: $tablet-width) {
-    margin-top: 35px;
-  }
 }
 
-.form__group {
-  width: 45%;
+.form input {
+  width: 48%;
+  padding: 15px;
+  margin-bottom: 36px;
+  color: $white;
+  background-color: #1fb8fb;
+  border: none;
 
-  // &:first-of-type {
-  //   width: calc(50% - 30px);
-  //   margin-right: 30px;
-  // }
 
-  // @media (max-width: $tablet-width) {
-  //   &:first-of-type {
-  //     margin: 0;
-  //   }
-  // }
+  &::placeholder {
+    font-family: $ptMono;
+    color: $white;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &:focus {
+    outline: 1px solid #4e96b5;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 48%;
+  }
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    margin-bottom: 35px;
-
-    &:first-of-type {
-      width: 100%;
-      margin-bottom: 35px;
-    }
   }
 }
 
-.form__group--big {
-  width: 100%;
-  margin-top: 25px;
-  margin-bottom: 50px;
-
-  @media (max-width: $tablet-width) {
-    margin-top: 50px;
-    margin-bottom: 45px;
-  }
-
-  @media (max-width: $mobile-width) {
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
-}
-
-.form input,
 .form textarea {
   width: 100%;
+  height: 154px; /* Высота поля в пикселах */
+  resize: none; /* Запрещаем изменять размер */
+
+
   padding: 15px;
+  margin-bottom: 50px;
   color: $white;
   background-color: #1fb8fb;
   border: none;
@@ -73,65 +56,21 @@
   &:focus {
     outline: 1px solid #4e96b5;
   }
-}
 
-.form textarea {
-  width: 100%;
-  height: 154px; /* Высота поля в пикселах */
-  resize: none; /* Запрещаем изменять размер */
+  @media (max-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 
   @media (max-width: $mobile-width) {
     height: 104px;
+    margin-bottom: 32px;
   }
-}
-
-.form input[type="checkbox"] {
-  display: none;
-}
-
-.form label {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    display: inline-block;
-    height: 16px;
-    width: 16px;
-    border: 1px solid;
-    top: 10px;
-    left: 30px;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    display: inline-block;
-    height: 6px;
-    width: 9px;
-    border-left: 2px solid;
-    border-bottom: 2px solid;
-
-    transform: rotate(-45deg);
-    left: 33px;
-    top: 12px;
-  }
-}
-
-/* Прячем галку по умолчанию */
-.form input[type="checkbox"] + label::after {
-  content: none;
-}
-
-/* Показываем галку по состоянию checked */
-.form input[type="checkbox"]:checked + label::after {
-  content: " cxc";
 }
 
 .form__btn {
   @include btn();
 
-  width: 270px;
+  width: 48%;
   font-size: 14px;
   line-height: 16px;
   padding: 11px 0;
@@ -144,19 +83,65 @@
     background-color: $white;
   }
 
-  @media (max-width: $tablet-width) {
-    width: 280px;
+  @media (max-width: $mobile-width) {
+    width: 100%;
   }
 }
 
-.form__checkbox-text {
-  font-family: $ptMono;
-  font-size: 14px;
-  padding-left: 65px;
-  margin: 0;
-  opacity: 0.8;
+.form input[type="checkbox"] {
+  display: none;
+}
+
+.form__group {
+  width: 50%;
+  padding-left: 55px;
 
   @media (max-width: $mobile-width) {
-    padding-left: 35px;
+    width: 100%;
+    margin-top: 35px;
+    padding-left: 32px;
   }
+}
+
+.form label {
+  position: relative;
+  cursor: pointer;
+  font-family: $ptMono;
+  font-size: 14px;
+  opacity: 0.8;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border: 1px solid;
+    top: 0;
+    left: -30px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+
+    transform: rotate(-45deg);
+    left: -27px;
+    top: 2px;
+  }
+}
+
+/* Прячем галку по умолчанию */
+.form input[type="checkbox"] + label::after {
+  content: none;
+}
+
+/* Показываем галку по состоянию checked */
+.form input[type="checkbox"]:checked + label::after {
+  content: "";
 }
