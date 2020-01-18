@@ -68,17 +68,17 @@
       <!-- форма -->
       <form class="form modal__form" method="GET">
         <label class="visually-hidden" for="modal-name">Имя</label>
-        <input type="text" name="modal-name" id="modal-name" placeholder="Имя" required="">
+        <input type="text" name="modal-name" id="modal-name" placeholder="Имя" required="" autocomplete="on">
 
         <label class="visually-hidden" for="modal-tel">Телефон</label>
-        <input type="tel" name="modal-tel" id="modal-tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон" required="">
+        <input type="tel" name="modal-tel" id="modal-tel" placeholder="Телефон" required="" autocomplete="on">
 
         <label class="visually-hidden" for="modal-message">Сообщение</label>
         <textarea name="message" id="modal-message" placeholder="Ваш вопрос" required=""></textarea>
 
         <button class="form__btn" type="submit">Задать вопрос</button>
         <div class="form__group">
-          <input id="modal" type="checkbox">
+          <input id="modal" type="checkbox" checked="">
           <label for="modal">Я согласен на обработку персональных данных</label>
         </div>
       </form>
@@ -127,15 +127,15 @@
         </div>
         <h1 class="intro__title">Печатные платы</h1>
         <p class="intro__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="intro__btn">Получить бесплатную консультацию</a>
-        <a class="intro__btn-mobile">Бесплатная консультацию</a>
-        <p class="intro__scroll">Скролл вниз</p>
-      </div>
+        <a href="#feedback" class="intro__btn">Получить бесплатную консультацию</a>
+        <a href="#feedback" class="intro__btn-mobile">Бесплатная консультацию</a>
+        <a href="#advantage" class="intro__scroll">Скролл вниз<p></p>
+      </a></div>
     </div>
   </header>
 
   <main>
-    <section class="advantage">
+    <section class="advantage" id="advantage">
       <div class="container advantage__wrapper">
 
         <ul class="advantage__list">
@@ -171,7 +171,7 @@
           </li>
         </ul>
 
-        <section class="about">
+        <section class="about" id="advantage">
           <h2 class="about__title">О компании</h2>
           <p class="about__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
           </p>
@@ -218,7 +218,7 @@
       </div>
     </section>
 
-    <section class="feedback">
+    <section class="feedback" id="feedback">
       <div class="container feedback__wrapper">
 
         <div class="feedback__img">
@@ -231,18 +231,18 @@
           <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
 
           <form class="form" method="GET">
-            <label class="visually-hidden" for="name">Имя</label>
-            <input type="text" name="name" id="name" placeholder="Имя" required="">
+            <label class="visually-hidden" for="feedback-name">Имя</label>
+            <input type="text" name="name" id="feedback-name" placeholder="Имя" autocomplete="on" required="">
 
-            <label class="visually-hidden" for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон" required="">
+            <label class="visually-hidden" for="feedback-tel">Телефон</label>
+            <input type="tel" name="tel" id="feedback-tel" placeholder="Телефон" autocomplete="on" required="">
 
-            <label class="visually-hidden" for="message">Сообщение</label>
-            <textarea name="message" id="message" placeholder="Ваш вопрос" required=""></textarea>
+            <label class="visually-hidden" for="feedback-message">Сообщение</label>
+            <textarea name="message" id="feedback-message" placeholder="Ваш вопрос" required=""></textarea>
 
             <button class="form__btn" type="submit">Задать вопрос</button>
             <div class="form__group">
-              <input id="checkbox" type="checkbox">
+              <input id="checkbox" type="checkbox" checked="">
               <label for="checkbox">Я согласен на обработку персональных данных</label>
             </div>
           </form>
@@ -365,8 +365,7 @@
 
   </footer>
 
-
+  <script src="/js/vendor.js"></script>
   <script src="/js/script.js"></script>
-  <script src="/js/vendor.js" async=""></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 .intro {
   position: relative;
-  width: 720px;
+  width: 730px;
   margin-top: 220px;
   z-index: 1;
 
@@ -88,6 +88,7 @@
   width: 405px;
   margin-left: 98px;
   margin-top: 23px;
+  scroll-behavior: smooth;
 
   &:hover {
     background-color: transparent;
@@ -168,6 +169,7 @@
 
 .intro__scroll {
   font-family: $ptMono;
+  display: block;
   position: absolute;
   left: -35px;
   bottom: -166px;
