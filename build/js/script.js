@@ -1,70 +1,72 @@
 'use strict';
-var btnNav = document.querySelector('#btn-nav');
-var btnContact = document.querySelector('#btn-contact');
-var navHidden = document.querySelector('.nav__list--hidden');
-var contactHidden = document.querySelector('.footer__contact-list--hidden');
 
-btnNav.addEventListener('click', function () {
-  if (btnNav.classList.contains('btn__plus')) {
-    btnNav.classList.remove('btn__plus');
-    btnNav.classList.add('btn__minus');
-    navHidden.style.display = 'block'
+/* аккордеон */
+const btnNav = document.querySelector('#btn-nav');
+const btnContact = document.querySelector('#btn-contact');
+const navList = document.querySelector('.nav__list');
+const contactList = document.querySelector('.footer__contact-list');
+
+const toogle = (btn, changeClass) => {
+  if (btn.classList.contains('footer__btn--plus')) {
+    btn.classList.remove('footer__btn--plus');
+    btn.classList.add('footer__btn--minus');
+    changeClass.classList.remove('visually-hidden');
   } else {
-    btnNav.classList.remove('btn__minus');
-    btnNav.classList.add('btn__plus');
-    navHidden.style.display = 'none'
+    btn.classList.remove('footer__btn--minus');
+    btn.classList.add('footer__btn--plus');
+    changeClass.classList.add('visually-hidden');
   }
-});
+}
 
-btnContact.addEventListener('click', function () {
-  if (btnContact.classList.contains('btn__plus')) {
-    btnContact.classList.remove('btn__plus');
-    btnContact.classList.add('btn__minus');
-    contactHidden.style.display = 'block'
-  } else {
-    btnContact.classList.remove('btn__minus');
-    btnContact.classList.add('btn__plus');
-    contactHidden.style.display = 'none'
-  }
-});
+btnNav.addEventListener('click', () => toogle(btnNav, navList));
+btnContact.addEventListener('click', () => toogle(btnContact, contactList));
 
-var popup = document.querySelector('.modal');
+/* модальное окно */
+var modal = document.querySelector('.modal');
 var callBtn = document.querySelector('.header__call');
 var body = document.querySelector('body');
 var overlay = document.querySelector('.overlay');
 var close = document.querySelector('.modal__close');
-console.log(overlay)
 
-callBtn.addEventListener('click', function () {
-  if (popup.style.display = 'none') {
-    popup.style.display = 'flex';
-    body.style.overflow = 'hidden';
+
+callBtn.addEventListener('click', () => {
+  if (modal.classList.contains('visually-hidden')) {
+    modal.classList.remove('visually-hidden');
     overlay.classList.remove('visually-hidden');
+    body.style.overflow = 'hidden';
   } else {
-    popup.style.display = 'none';
-    body.style.overflow = 'auto';
+    modal.classList.add('visually-hidden');
     overlay.classList.add('visually-hidden');
+    body.style.overflow = 'auto';
   }
 })
 
-close.addEventListener('click', function () {
-    popup.style.display = 'none';
-    body.style.overflow = 'auto';
-    overlay.classList.add('visually-hidden');
-})
+const closeModal = () => {
+  modal.classList.add('visually-hidden');
+  overlay.classList.add('visually-hidden');
+  body.style.overflow = 'auto'
+}
 
-overlay.addEventListener('click', function (evt) {
-    popup.style.display = 'none';
-    body.style.overflow = 'auto';
-    overlay.classList.add('visually-hidden');
-})
-
-window.addEventListener('keydown', function (evt) {
-  if (evt.code === 'Escape') {
-    popup.style.display = 'none';
-    body.style.overflow = 'auto';
-    overlay.classList.add('visually-hidden');
-
+close.addEventListener('click', closeModal)
+overlay.addEventListener('click', closeModal)
+window.addEventListener('keydown', (e) => {
+  if (e.code === 'Escape') {
+    closeModal();
   }
 })
+
+// overlay.addEventListener('click', function () {
+//     modal.classList.add('visually-hidden');
+//     body.style.overflow = 'auto';
+//     overlay.classList.add('visually-hidden');
+// })
+
+// window.addEventListener('keydown', function (evt) {
+//   if (evt.code === 'Escape') {
+//     modal.classList.add('visually-hidden');
+//     body.style.overflow = 'auto';
+//     overlay.classList.add('visually-hidden');
+
+//   }
+// })
 
