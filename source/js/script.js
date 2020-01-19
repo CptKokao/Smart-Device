@@ -1,3 +1,4 @@
+/* eslint-disable */
 'use strict';
 
 /* аккордеон */
@@ -12,11 +13,11 @@ var toogle = function toogle(e, btn, changeClass) {
   if (btn.classList.contains('footer__btn--plus')) {
     btn.classList.remove('footer__btn--plus');
     btn.classList.add('footer__btn--minus');
-    changeClass.style.display = "block";
+    changeClass.style.display = 'block';
   } else {
     btn.classList.remove('footer__btn--minus');
     btn.classList.add('footer__btn--plus');
-    changeClass.style.display = "none";
+    changeClass.style.display = 'none';
   }
 };
 
@@ -53,7 +54,7 @@ callBtn.addEventListener('click', function (e) {
 
 /* закрытие модального окна */
 var closeModal = function closeModal(e) {
-  // e.preventDefault();
+  e.preventDefault();
   modal.classList.add('visually-hidden');
   overlay.classList.add('visually-hidden');
   body.style.overflow = 'auto';
@@ -78,7 +79,7 @@ var feedbackTel = document.querySelector('#feedback-tel');
 var feedbackMessage = document.querySelector('#feedback-message');
 
 if (formModal) {
-  formModal.addEventListener('submit', function (e) {
+  formModal.addEventListener('submit', function () {
     localStorage.setItem('name-modal', modalName.value);
     localStorage.setItem('phone-modal', modalTel.value);
     localStorage.setItem('message-modal', modalMessage.value);
@@ -86,7 +87,7 @@ if (formModal) {
 }
 
 if (feedbackModal) {
-  feedbackModal.addEventListener('submit', function (e) {
+  feedbackModal.addEventListener('submit', function () {
     localStorage.setItem('name-field', feedbackName.value);
     localStorage.setItem('phone-field', feedbackTel.value);
     localStorage.setItem('message-field', feedbackMessage.value);
@@ -97,10 +98,11 @@ if (feedbackModal) {
 var maskOptions = {
   mask: '+{7}(000)000-00-00'
 };
+
 IMask(modalTel, maskOptions);
 IMask(feedbackTel, maskOptions);
 
 var lazyLoadInstance = new LazyLoad({
-  elements_selector: ".lazy"
+  elements_selector: '.lazy'
   // ... more custom settings?
 });

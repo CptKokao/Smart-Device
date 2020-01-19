@@ -20,3 +20,8 @@ trim_trailing_whitespace = true
 
 [*.md]
 trim_trailing_whitespace = false
+
+[*js]
+indent_size = none
+tab_width = none
+end_of_line = none

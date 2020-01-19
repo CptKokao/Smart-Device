@@ -5,17 +5,17 @@
 @import "global/fonts.scss";
 @import "global/global.scss";
 
-// Импорт блоков
-@import "blocks/header.scss";
-@import "blocks/logo.scss";
-@import "blocks/intro.scss";
-@import "blocks/advantage.scss";
-@import "blocks/about.scss";
-@import "blocks/product.scss";
-@import "blocks/feedback.scss";
-@import "blocks/form.scss";
-@import "blocks/footer.scss";
-@import "blocks/social.scss";
-@import "blocks/nav.scss";
-@import "blocks/extra.scss";
-@import "blocks/modal.scss";
+// Импорт компонентов
+@import "components/header.scss";
+@import "components/logo.scss";
+@import "components/intro.scss";
+@import "components/advantage.scss";
+@import "components/about.scss";
+@import "components/product.scss";
+@import "components/feedback.scss";
+@import "components/form.scss";
+@import "components/footer.scss";
+@import "components/social.scss";
+@import "components/nav.scss";
+@import "components/extra.scss";
+@import "components/modal.scss";
