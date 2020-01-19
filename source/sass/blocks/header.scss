@@ -2,16 +2,13 @@
   min-height: 875px;
   padding-bottom: 30px;
   padding-top: 20px;
-  background: $grey url("../img/bg-header.jpg") center no-repeat;
+  background: $grey url("../img/bg-header.webp") center no-repeat;
   background-size: cover;
   overflow: hidden;
   z-index: 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .header {
-      background: $grey url("../img/bg-header@2x.jpg") center no-repeat;
-      background-size: cover;
-    }
+    background: $grey url("../img/bg-header@2x.webp") center no-repeat;
   }
 
   @media (max-width: $tablet-width) {
@@ -23,6 +20,15 @@
     min-height: 650px;
     padding-top: 6px;
     padding-left: 15px;
+  }
+}
+
+/* если не поддерживается webp */
+.no-webp header {
+  background: $grey url("../img/bg-header.jpg") center no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: $grey url("../img/bg-header@2x.jpg") center no-repeat;
   }
 }
 

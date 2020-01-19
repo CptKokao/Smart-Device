@@ -71,111 +71,170 @@
     margin-bottom: 30px;
   }
 }
-
+/* production */
 .product__item--production {
+  background: url("../img/production.webp") center no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/production@2x.webp") center no-repeat;
+  }
+
+  /* tablet */
+  @media (max-width: $tablet-width) {
+    background: url("../img/production-tablet.webp") center no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/production-tablet@2x.webp") center no-repeat;
+    }
+  }
+
+  /* mobile */
+  @media (max-width: $mobile-width) {
+    background: url("../img/production-mobile.webp") center no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/production-mobile@2x.webp") center no-repeat;
+    }
+  }
+}
+
+/* если не поддерживается webp */
+.no-webp .product__item--production {
   background: url("../img/production.png") center no-repeat;
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .header {
-      background: url("../img/production@2x.png") center no-repeat;
-      background-size: cover;
-    }
+    background: url("../img/production@2x.png") center no-repeat;
   }
 
+  /* tablet */
   @media (max-width: $tablet-width) {
     background: url("../img/production-tablet.png") center no-repeat;
-    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      .header {
-        background: url("../img/production-tablet@2x.png") center no-repeat;
-        background-size: cover;
-      }
+      background: url("../img/production-tablet@2x.png") center no-repeat;
     }
   }
 
+  /* mobile */
   @media (max-width: $mobile-width) {
     background: url("../img/production-mobile.png") center no-repeat;
-    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      .header {
-        background: url("../img/production-mobile@2x.png") center no-repeat;
-        background-size: cover;
-      }
+      background: url("../img/production-mobile@2x.png") center no-repeat;
     }
   }
 }
 
+/* mounting */
 .product__item--mounting {
+  background: url("../img/mounting.webp") center no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/mounting@2x.webp") center no-repeat;
+  }
+
+  /* tablet */
+  @media (max-width: $tablet-width) {
+    background: url("../img/mounting-tablet.webp") center no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/mounting-tablet@2x.webp") center no-repeat;
+    }
+  }
+
+  /* mobile */
+  @media (max-width: $mobile-width) {
+    background: url("../img/mounting-mobile.webp") center no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/mounting-mobile@2x.webp") center no-repeat;
+    }
+  }
+}
+
+/* если не поддерживается webp */
+.no-webp .product__item--mounting {
   background: url("../img/mounting.png") center no-repeat;
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .header {
-      background: url("../img/mounting@2x.png") center no-repeat;
-      background-size: cover;
-    }
+    background: url("../img/mounting@2x.png") center no-repeat;
   }
 
+  /* tablet */
   @media (max-width: $tablet-width) {
     background: url("../img/mounting-tablet.png") center no-repeat;
-    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      .header {
-        background: url("../img/mounting-tablet@2x.png") center no-repeat;
-        background-size: cover;
-      }
+      background: url("../img/mounting-tablet@2x.png") center no-repeat;
     }
   }
 
+  /* mobile */
   @media (max-width: $mobile-width) {
     background: url("../img/mounting-mobile.png") center no-repeat;
-    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      .header {
-        background: url("../img/mounting-mobile@2x.png") center no-repeat;
-        background-size: cover;
-      }
+      background: url("../img/mounting-mobile@2x.png") center no-repeat;
     }
   }
 }
 
+/* extra */
 .product__item--extra {
+  background: url("../img/extra.webp") center no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/extra@2x.webp") center no-repeat;
+  }
+
+  /* tablet */
+  @media (max-width: $tablet-width) {
+    background: url("../img/extra-tablet.webp") center no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/extra-tablet@2x.webp") center no-repeat;
+    }
+  }
+
+  /* mobile */
+  @media (max-width: $mobile-width) {
+    background: url("../img/extra-mobile.webp") center no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/extra-mobile@2x.webp") center no-repeat;
+    }
+  }
+}
+
+/* если не поддерживается webp */
+.no-webp .product__item--extra {
   background: url("../img/extra.png") center no-repeat;
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .header {
-      background: url("../img/extra@2x.png") center no-repeat;
-      background-size: cover;
-    }
+    background: url("../img/extra@2x.png") center no-repeat;
   }
 
+  /* tablet */
   @media (max-width: $tablet-width) {
     background: url("../img/extra-tablet.png") center no-repeat;
-    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      .header {
-        background: url("../img/extra-tablet@2x.png") center no-repeat;
-        background-size: cover;
-      }
+      background: url("../img/extra-tablet@2x.png") center no-repeat;
     }
   }
 
+  /* mobile */
   @media (max-width: $mobile-width) {
     background: url("../img/extra-mobile.png") center no-repeat;
-    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      .header {
-        background: url("../img/extra-mobile@2x.png") center no-repeat;
-        background-size: cover;
-      }
+      background: url("../img/extra-mobile@2x.png") center no-repeat;
     }
   }
 }

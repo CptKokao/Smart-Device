@@ -55,17 +55,17 @@
 </symbol></svg>
   </div>
 
-  <!-- оверлей -->
+  <!-- overlay -->
   <div class="overlay visually-hidden"></div>
 
-  <!-- модальное окно -->
+  <!-- modal -->
   <div class="modal visually-hidden">
     <div class="modal__wrapper">
       <h2 class="modal__title">Закажите звонок</h2>
       <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <div class="modal__close"></div>
 
-      <!-- форма -->
+      <!-- form -->
       <form class="form modal__form" method="GET">
         <label class="visually-hidden" for="modal-name">Имя</label>
         <input type="text" name="modal-name" id="modal-name" placeholder="Имя" required="" autocomplete="on">
@@ -85,12 +85,12 @@
     </div>
   </div>
 
-  <header class="header">
-
+  <!-- header -->
+  <header class="no-webp header">
     <div class="container container--big">
       <div class="header__container">
 
-        <!-- лого -->
+        <!-- logo -->
         <a class="logo header__logo" href="#">
           <img class="logo__img" src="/img/logo.svg" width="52" height="52" alt="Логотип">
           <div class="logo__desc">
@@ -99,7 +99,7 @@
           </div>
         </a>
 
-        <!-- header -->
+        <!-- header__list -->
         <ul class="header__list">
           <li class="header__email">
             <a href="mailto:info@sd.ru">
@@ -122,22 +122,24 @@
       <!-- intro -->
       <div class="intro">
         <div class="intro__img">
-          <!-- 1х: 705px; 2x: 1410px -->
-          <img src="/img/printed-board.png" width="705" height="515" srcset="/img/printed-board@2x.png 2x" alt="Печатные платы">
-        </div>
+          <picture>
+            <source type="image/webp" srcset="/img/printed-board@2x.webp 2x, /img/printed-board.webp 1x">
+              <img src="/img/printed-board.png" srcset="/img/printed-board@2x.png 2x" alt="Печатные платы">
+            </picture></div>
+          
         <h1 class="intro__title">Печатные платы</h1>
         <p class="intro__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
         <a href="#feedback" class="intro__btn">Получить бесплатную консультацию</a>
         <a href="#feedback" class="intro__btn-mobile">Бесплатная консультацию</a>
-        <a href="#advantage" class="intro__scroll">Скролл вниз<p></p>
-      </a></div>
+        <a href="#advantage" class="intro__scroll">Скролл вниз</a>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="advantage" id="advantage">
+    <!-- advantage -->
+    <section class="no-webp advantage" id="advantage">
       <div class="container advantage__wrapper">
-
         <ul class="advantage__list">
           <li class="advantage__item">
             <svg class="advantage__icon" width="29" height="35">
@@ -171,27 +173,29 @@
           </li>
         </ul>
 
-        <section class="about" id="advantage">
+        <!-- about -->
+        <section class="about">
           <h2 class="about__title">О компании</h2>
           <p class="about__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
           </p>
           <p class="about__text about-text--norm">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
           <p class="about__text about-text--small">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог..</p>
-          <a href="" class="about__btn">подробнее</a>
+          <a href="#" class="about__btn">подробнее</a>
           <div class="about__img">
-            <img class="lazyload" data-src="/img/2005.svg" width="317" height="220" alt="Год">
+            <!-- lazyload -->
+            <img data-src="/img/2005.svg" width="317" height="220" class="lazy" alt="Год">
           </div>
         </section>
-
       </div>
     </section>
 
+    <!-- product -->
     <section class="product">
       <div class="container">
         <h2 class="product__title">Service Device предлагает следующие товары и услуги</h2>
         <div class="product__list">
           <a class="product__link" href="#">
-            <div class="product__item product__item--production">
+            <div class="no-webp product__item product__item--production">
               <p class="product__item-title">Производство печатных плат</p>
               <div class="product__item-btn">
                 <span>&gt;</span>
@@ -218,18 +222,21 @@
       </div>
     </section>
 
+    <!-- feedback -->
     <section class="feedback" id="feedback">
       <div class="container feedback__wrapper">
-
         <div class="feedback__img">
-          <!-- 1х: 511px; 2x: 1022px -->
-          <img src="/img/airplane.png" width="511" height="288" srcset="/img/airplane@2x.png 2x" alt="Печатные платы">
+          <!-- lazyload -->
+          <picture>
+            <source type="image/webp" data-srcset="/img/airplane@2x.webp 2x, /img/airplane.webp 1x">
+            <img class="lazy" data-src="/img/airplane.png" data-srcset="/img/airplane@2x.png 2x" alt="Самолет">
+          </picture>
         </div>
-
         <div class="feedback__form-wrapper">
           <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
           <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
 
+          <!-- form -->
           <form class="form" method="GET">
             <label class="visually-hidden" for="feedback-name">Имя</label>
             <input type="text" name="name" id="feedback-name" placeholder="Имя" autocomplete="on" required="">
@@ -246,18 +253,17 @@
               <label for="checkbox">Я согласен на обработку персональных данных</label>
             </div>
           </form>
-
         </div>
       </div>
     </section>
-
-
   </main>
+
   <footer>
     <div class="footer container--big footer__container">
-      <!-- logo социальные сети -->
+      <!-- footer__logo -->
       <div class="footer__logo">
 
+        <!-- logo -->
         <a class="logo" href="#">
           <img class="logo__img" src="/img/logo.svg" width="52" height="52" alt="Логотип">
           <div class="logo__desc footer__logo--show">
@@ -265,7 +271,7 @@
             <p class="logo__text logo__text--black">умные технологии</p>
           </div>
         </a>
-        <p class="social__text">1999-2018 SD Service Devices</p>
+        <p class="footer__text">1999-2018 SD Service Devices</p>
         <ul class="social">
           <li class="social__item">
             <a href="#">
@@ -291,12 +297,13 @@
         </ul>
       </div>
 
-      <!-- навигация -->
       <nav class="footer__nav">
+
+        <!-- nav -->
         <div class="nav">
           <h2 class="nav__title">Разделы сайта</h2>
           <button class="footer__btn footer__btn--plus" id="btn-nav"></button>
-          <ul class="nav__list visually-hidden">
+          <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="#">О компании</a>
             </li>
@@ -322,11 +329,11 @@
         </div>
       </nav>
 
-      <!-- Контакты -->
+      <!-- footer__contact -->
       <div class="footer__contact">
         <h2 class="footer__contact-title">Наш офис</h2>
         <button class="footer__btn footer__btn--position footer__btn--plus" id="btn-contact"></button>
-        <ul class="footer__contact-list visually-hidden">
+        <ul class="footer__contact-list">
           <li class="footer__contact-item">
             <p class="footer__contact-text">г. Мытищи, Олимпийский проспект, д.10</p>
           </li>
@@ -343,7 +350,7 @@
       </div>
     </div>
 
-    <!-- дополнение -->
+    <!-- footer__extra -->
     <div class="footer__container--extra">
       <div class="footer__extra container--big">
         <ul class="footer__extra-list">
@@ -362,7 +369,6 @@
         </ul>
       </div>
     </div>
-
   </footer>
 
   <script src="/js/vendor.js"></script>

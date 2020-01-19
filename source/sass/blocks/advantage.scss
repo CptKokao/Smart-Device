@@ -1,22 +1,19 @@
 .advantage {
-  // min-height: 1257px;
-  background: url("../img/bg-about.jpg") center no-repeat;
+  background: url("../img/bg-about.webp") center no-repeat;
   background-size: cover;
   z-index: 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .header {
-      background: #1b2d37 url("../img/bg-about@2x.jpg") center no-repeat;
-      background-size: cover;
-    }
+    background: #1b2d37 url("../img/bg-about@2x.webp") center no-repeat;
   }
+}
 
-  @media (max-width: $tablet-width) {
-    // min-height: 1115px;
-  }
+/* если не поддерживается webp */
+.no-webp .advantage {
+  background: url("../img/bg-about.jpg") center no-repeat;
 
-  @media (max-width: $mobile-width) {
-    // min-height: 1790px;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-about@2x.jpg") center no-repeat;
   }
 }
 
@@ -62,7 +59,6 @@
   }
 
   &:hover {
-    border: 1px solid #000000;
     background-color: $blue;
 
     .advantage__title,

@@ -12,11 +12,16 @@
 }
 
 .nav__list {
+  display: block;
   margin-top: 22px;
   column-count: 2;
 
   @media (max-width: $tablet-width) {
     column-count: 1;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
   }
 }
 

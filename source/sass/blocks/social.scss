@@ -14,21 +14,8 @@
   }
 }
 
-.social__text {
-  display: none;
-
-  @media (max-width: $tablet-width) {
-    display: block;
-    font-family: $ptMono;
-    font-size: 13px;
-    line-height: 24px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $grey;
-    opacity: 0.5;
-  }
-
-  @media (max-width: $mobile-width) {
-    margin-top: 28px;
+.social__icon {
+  &:hover {
+    fill: $blue;
   }
 }

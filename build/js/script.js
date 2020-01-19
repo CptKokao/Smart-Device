@@ -12,11 +12,11 @@ var toogle = function toogle(e, btn, changeClass) {
   if (btn.classList.contains('footer__btn--plus')) {
     btn.classList.remove('footer__btn--plus');
     btn.classList.add('footer__btn--minus');
-    changeClass.classList.remove('visually-hidden');
+    changeClass.style.display = "block";
   } else {
     btn.classList.remove('footer__btn--minus');
     btn.classList.add('footer__btn--plus');
-    changeClass.classList.add('visually-hidden');
+    changeClass.style.display = "none";
   }
 };
 
@@ -93,9 +93,14 @@ if (feedbackModal) {
   });
 }
 
-
+/* валидацию формы телефона */
 var maskOptions = {
   mask: '+{7}(000)000-00-00'
 };
-var mask = IMask(feedbackTel, maskOptions);
+IMask(modalTel, maskOptions);
+IMask(feedbackTel, maskOptions);
 
+var lazyLoadInstance = new LazyLoad({
+  elements_selector: ".lazy"
+  // ... more custom settings?
+});
