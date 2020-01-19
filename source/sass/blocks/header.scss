@@ -9,26 +9,28 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: $grey url("../img/bg-header@2x.webp") center no-repeat;
+    background-size: cover;
   }
 
   @media (max-width: $tablet-width) {
-    min-height: 684px;
+    min-height: 688px;
     padding-top: 15px;
   }
 
   @media (max-width: $mobile-width) {
     min-height: 650px;
     padding-top: 6px;
-    padding-left: 15px;
   }
 }
 
 /* если не поддерживается webp */
 .no-webp header {
   background: $grey url("../img/bg-header.jpg") center no-repeat;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: $grey url("../img/bg-header@2x.jpg") center no-repeat;
+    background-size: cover;
   }
 }
 
@@ -60,7 +62,7 @@
 }
 
 .header__phone {
-  margin-right: 45px;
+  margin-right: 50px;
 
   &:hover {
     @include hover();
@@ -107,7 +109,7 @@
   width: 180px;
   font-size: 14px;
   line-height: 16px;
-  padding: 11px 0;
+  padding: 13px 0;
   border: 1px solid $white;
   background-color: transparent;
 

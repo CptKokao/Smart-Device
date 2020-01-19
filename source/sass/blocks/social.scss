@@ -6,16 +6,16 @@
   width: 110px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 0;
+    margin-top: 5px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 
 .social__icon {
   &:hover {
-    fill: $blue;
+    @include hover();
   }
 }

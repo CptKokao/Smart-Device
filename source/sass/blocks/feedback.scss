@@ -2,7 +2,7 @@
   background-color: $blue;
   z-index: 1;
   position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 115px;
 
   @media (max-width: $tablet-width) {
     padding-bottom: 105px;
@@ -86,10 +86,10 @@
 
   @media (max-width: $tablet-width) {
     margin-top: 22px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 }

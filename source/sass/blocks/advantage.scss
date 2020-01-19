@@ -5,30 +5,34 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: #1b2d37 url("../img/bg-about@2x.webp") center no-repeat;
+    background-size: cover;
   }
 }
 
 /* если не поддерживается webp */
 .no-webp .advantage {
   background: url("../img/bg-about.jpg") center no-repeat;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/bg-about@2x.jpg") center no-repeat;
+    background-size: cover;
   }
 }
 
 .advantage__wrapper {
   padding-top: 93px;
-  padding-bottom: 125px;
+  padding-bottom: 110px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 40px;
+    padding-top: 37px;
     padding-bottom: 80px;
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 18px;
     padding-bottom: 60px;
+    padding-left: 5px;
   }
 }
 
@@ -50,9 +54,9 @@
   border-left: 2px solid $blue;
   margin-right: 30px;
   margin-bottom: 30px;
-  padding-left: 50px;
+  padding-left: 45px;
   padding-right: 42px;
-  padding-top: 40px;
+  padding-top: 45px;
 
   &:nth-of-type(2n) {
     margin-right: 0;
@@ -74,7 +78,7 @@
   @media (max-width: $tablet-width) {
     min-height: 232px;
     padding-left: 25px;
-    padding-right: 30px;
+    padding-right: 0;
     padding-top: 23px;
   }
 
@@ -82,7 +86,7 @@
     width: calc(100% - 15px);
     margin-right: 0;
     margin-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 25px;
     padding-right: 10px;
     padding-bottom: 10px;
     min-height: 232px;
@@ -98,12 +102,14 @@
   @media (max-width: $tablet-width) {
     margin-top: 5px;
     margin-bottom: 0;
+    padding-right: 10px;
   }
 
   @media (max-width: $mobile-width) {
     width: 240px;
     margin-top: 10px;
     font-size: 20px;
+    padding-right: 0;
   }
 }
 
@@ -113,7 +119,12 @@
   line-height: 22px;
   color: $text;
 
+  @media (max-width: $tablet-width) {
+    padding-right: 30px;
+  }
+
   @media (max-width: $mobile-width) {
     margin-top: 10px;
+    padding-right: 5px;
   }
 }

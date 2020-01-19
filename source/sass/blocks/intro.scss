@@ -88,7 +88,6 @@
   width: 405px;
   margin-left: 98px;
   margin-top: 23px;
-  scroll-behavior: smooth;
 
   &:hover {
     background-color: transparent;
@@ -171,8 +170,8 @@
   font-family: $ptMono;
   display: block;
   position: absolute;
-  left: -35px;
-  bottom: -166px;
+  left: -40px;
+  bottom: -155px;
   transform: rotate(-90deg);
   opacity: 0.5;
   font-size: 14px;

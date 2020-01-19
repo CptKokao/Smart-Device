@@ -15,8 +15,6 @@
   height: auto;
 }
 
-
-
 /* контейнеры для флекса */
 
 .footer__logo {
@@ -29,10 +27,7 @@
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid $line;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-top: 20px;
-    padding-bottom: 25px;
+    padding: 24px;
   }
 
   @media (max-width: $mobile-width) {
@@ -104,6 +99,7 @@
 /*--- end ---*/
 
 .footer__contact-title {
+  margin-bottom: 3px;
   font-size: 15px;
   font-weight: normal;
   letter-spacing: 0.05em;
@@ -112,6 +108,7 @@
 
   @media (max-width: $tablet-width) {
     align-self: flex-start;
+    margin-bottom: 8px;
   }
 }
 
