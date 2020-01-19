@@ -86,22 +86,22 @@
   @media (max-width: $tablet-width) {
     background: url("../img/production-tablet.webp") center no-repeat;
     background-size: cover;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/production-tablet@2x.webp") center no-repeat;
-      background-size: cover;
-    }
+  }
+  /* tablet && retina */
+  @media (max-width: $tablet-width) and (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/production-tablet@2x.webp") center no-repeat;
+    background-size: cover;
   }
 
   /* mobile */
   @media (max-width: $mobile-width) {
     background: url("../img/production-mobile.webp") center no-repeat;
     background-size: cover;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/production-mobile@2x.webp") center no-repeat;
-      background-size: cover;
-    }
+  }
+  /* mobile && retina */
+  @media (max-width: $mobile-width) and (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/production-mobile@2x.webp") center no-repeat;
+    background-size: cover;
   }
 }
 
@@ -119,21 +119,20 @@
   @media (max-width: $tablet-width) {
     background: url("../img/production-tablet.png") center no-repeat;
     background-size: cover;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/production-tablet@2x.png") center no-repeat;
-    }
   }
-
+  /* tablet && retina */
+  @media (max-width: $tablet-width) and (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/production-tablet@2x.png") center no-repeat;
+  }
   /* mobile */
   @media (max-width: $mobile-width) {
     background: url("../img/production-mobile.png") center no-repeat;
     background-size: cover;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/production-mobile@2x.png") center no-repeat;
-      background-size: cover;
-    }
+  }
+  /* mobile && retina */
+  @media (max-width: $mobile-width) and (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/production-mobile@2x.png") center no-repeat;
+    background-size: cover;
   }
 }
 
@@ -151,22 +150,21 @@
   @media (max-width: $tablet-width) {
     background: url("../img/mounting-tablet.webp") center no-repeat;
     background-size: cover;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/mounting-tablet@2x.webp") center no-repeat;
-      background-size: cover;
-    }
   }
-
+  /* tablet && retina */
+  @media (max-width: $tablet-width) and (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/mounting-tablet@2x.webp") center no-repeat;
+    background-size: cover;
+  }
   /* mobile */
   @media (max-width: $mobile-width) {
     background: url("../img/mounting-mobile.webp") center no-repeat;
     background-size: cover;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/mounting-mobile@2x.webp") center no-repeat;
-      background-size: cover;
-    }
+  }
+  /* mobile && retina */
+  @media (max-width: $mobile-width) and (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/mounting-mobile@2x.webp") center no-repeat;
+    background-size: cover;
   }
 }
 
@@ -184,21 +182,21 @@
   @media (max-width: $tablet-width) {
     background: url("../img/mounting-tablet.png") center no-repeat;
     background-size: cover;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/mounting-tablet@2x.png") center no-repeat;
-    }
+  }
+  /* tablet && retina */
+  @media (max-width: $tablet-width) and (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/mounting-tablet@2x.png") center no-repeat;
   }
 
   /* mobile */
   @media (max-width: $mobile-width) {
     background: url("../img/mounting-mobile.png") center no-repeat;
     background-size: cover;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/mounting-mobile@2x.png") center no-repeat;
-      background-size: cover;
-    }
+  }
+  /* mobile && retina */
+  @media (max-width: $mobile-width) and (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/mounting-mobile@2x.png") center no-repeat;
+    background-size: cover;
   }
 }
 
@@ -216,22 +214,22 @@
   @media (max-width: $tablet-width) {
     background: url("../img/extra-tablet.webp") center no-repeat;
     background-size: cover;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/extra-tablet@2x.webp") center no-repeat;
-      background-size: cover;
-    }
+  }
+  /* tablet && retina */
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/extra-tablet@2x.webp") center no-repeat;
+    background-size: cover;
   }
 
   /* mobile */
   @media (max-width: $mobile-width) {
     background: url("../img/extra-mobile.webp") center no-repeat;
     background-size: cover;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/extra-mobile@2x.webp") center no-repeat;
-      background-size: cover;
-    }
+  }
+  /* mobile && retina */
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/extra-mobile@2x.webp") center no-repeat;
+    background-size: cover;
   }
 }
 
@@ -248,19 +246,19 @@
   /* tablet */
   @media (max-width: $tablet-width) {
     background: url("../img/extra-tablet.png") center no-repeat;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/extra-tablet@2x.png") center no-repeat;
-    }
+  }
+  /* tablet && retina */
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/extra-tablet@2x.png") center no-repeat;
   }
 
   /* mobile */
   @media (max-width: $mobile-width) {
     background: url("../img/extra-mobile.png") center no-repeat;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/extra-mobile@2x.png") center no-repeat;
-    }
+  }
+  /* mobile && retina */
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/extra-mobile@2x.png") center no-repeat;
   }
 }
 
