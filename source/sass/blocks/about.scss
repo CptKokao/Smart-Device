@@ -54,13 +54,13 @@
   }
 }
 
-.about-text--norm {
+.about__text--norm {
   @media (max-width: $tablet-width) {
     display: none;
   }
 }
 
-.about-text--small {
+.about__text--small {
   display: none;
 
   @media (max-width: $tablet-width) {
