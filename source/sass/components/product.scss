@@ -28,6 +28,7 @@
 .product__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 60px;
 
   @media (max-width: $tablet-width) {
@@ -56,6 +57,7 @@
   justify-content: space-between;
   padding-top: 30px;
   padding-left: 45px;
+  margin-bottom: 25px;
 
   &:hover {
     @include hover();
