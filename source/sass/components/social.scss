@@ -1,9 +1,8 @@
 .social {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 55px;
-  width: 110px;
 
   @media (max-width: $tablet-width) {
     margin-top: 5px;
@@ -12,6 +11,11 @@
   @media (max-width: $mobile-width) {
     margin-top: 15px;
   }
+}
+
+.social__item {
+  padding-right: 15px;
+  padding-bottom: 5px;
 }
 
 .social__icon {
