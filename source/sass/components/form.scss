@@ -26,6 +26,10 @@
     outline: 1px solid $white;
   }
 
+  &:hover {
+    @include hover();
+  }
+
   @media (max-width: $tablet-width) {
     margin-bottom: 50px;
   }
@@ -59,6 +63,10 @@
     outline: 1px solid $white;
   }
 
+  &:hover {
+    @include hover();
+  }
+
   @media (max-width: $tablet-width) {
     margin-bottom: 50px;
   }
@@ -69,7 +77,7 @@
   }
 }
 
-.form__btn {
+.form button {
   @include btn();
 
   width: 48%;
@@ -135,6 +143,10 @@
     transform: rotate(-45deg);
     left: -27px;
     top: 2px;
+  }
+
+  &:hover {
+    @include hover();
   }
 }
 
