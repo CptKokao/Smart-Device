@@ -38,64 +38,61 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .header__list {
+  width: calc(100% - 265px);
   display: flex;
   align-items: center;
-}
-
-.header__email {
-  margin-right: 80px;
-
-  &:hover {
-    @include hover();
-  }
+  justify-content: flex-end;
+  flex-wrap: wrap;
 
   @media (max-width: $tablet-width) {
-    margin-right: 34px;
+    width: calc(100% - 215px);
   }
 
   @media (max-width: $mobile-width) {
-    margin-right: 23px;
+    width: calc(100% - 52px);
   }
 }
 
-.header__phone {
-  margin-right: 50px;
+.header__item {
+  font-family: $ptMono;
+  padding-right: 50px;
+  padding-bottom: 10px;
 
-  &:hover {
+  &:last-of-type {
+    padding-right: 0;
+  }
+
+  :hover {
     @include hover();
   }
 
   @media (max-width: $tablet-width) {
-    margin-right: 0;
+    padding-right: 32px;
+
+    &:last-of-type {
+      padding-right: -30px;
+    }
   }
 }
 
-.header__email-img {
-  width: 19px;
-  height: 14px;
-
+.header__item--no_padding {
   @media (max-width: $tablet-width) {
-    width: 25px;
-    height: 18px;
+    padding-right: 0;
   }
 }
 
-.header__phone-img {
-  width: 18px;
-  height: 18px;
-
+.header__item img {
   @media (max-width: $tablet-width) {
     width: 24px;
-    height: 24px;
+    height: auto;
   }
 }
 
-.header__email-text,
-.header__phone-text {
-  font-family: $ptMono;
+.header__item-text {
   margin-left: 20px;
 
   @media (max-width: $tablet-width) {
@@ -107,6 +104,7 @@
   @include btn();
 
   width: 180px;
+  font-family: $robotoCondensed;
   font-size: 14px;
   line-height: 16px;
   padding: 13px 0;
@@ -116,6 +114,7 @@
   &:hover {
     background-color: $blue;
     border: 1px solid $blue;
+    opacity: 1;
   }
 
   @media (max-width: $tablet-width) {
