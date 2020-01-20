@@ -123,8 +123,11 @@
       <!-- intro -->
       <div class="intro">
         <div class="intro__img">
+           <!-- Кадрирование для оптимизации Lighthouse -->
           <!-- 1х: 705px; 2x: 1410px -->
           <picture>
+            <source media="(max-width: 767px)" srcset="img/printed-board-mobile@2x.png 2x, img/printed-board-mobile.png 1x">
+            <source media="(max-width: 767px)" type="image/webp" srcset="img/printed-board-mobile@2x.webp 2x, img/printed-board-mobile.webp 1x">
             <source type="image/webp" srcset="img/printed-board@2x.webp 2x, img/printed-board.webp 1x">
             <img src="img/printed-board.png" srcset="img/printed-board@2x.png 2x" alt="Печатные платы">
           </picture>
@@ -281,21 +284,21 @@
         <p class="footer__text">1999-2018 SD Service Devices</p>
         <ul class="social">
           <li class="social__item">
-            <a href="#" target="_blank" title="Фейсбук">
+            <a href="#" target="_blank" aria-label="Фейсбук">
               <svg class="social__icon" width="27" height="27">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a href="#" target="_blank" title="Одноклассники">
+            <a href="#" target="_blank" aria-label="Одноклассники">
               <svg class="social__icon" width="27" height="27">
                 <use xlink:href="#icon-ok"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a href="#" target="_blank" title="Вконтакте">
+            <a href="#" target="_blank" aria-label="Вконтакте">
               <svg class="social__icon" width="27" height="27">
                 <use xlink:href="#icon-vk"></use>
               </svg>
@@ -309,7 +312,7 @@
         <!-- nav -->
         <div class="nav">
           <h2 class="nav__title">Разделы сайта</h2>
-          <button class="footer__btn footer__btn--plus" id="btn-nav"></button>
+          <button class="footer__btn footer__btn--plus" id="btn-nav" aria-label="Открыть раздел сайта" type="button"></button>
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="#">О компании</a>
@@ -339,7 +342,7 @@
       <!-- footer__contact -->
       <div class="footer__contact">
         <h2 class="footer__contact-title">Наш офис</h2>
-        <button class="footer__btn footer__btn--position footer__btn--plus" id="btn-contact"></button>
+        <button class="footer__btn footer__btn--position footer__btn--plus" id="btn-contact" aria-label="Открыть раздел наш офис" type="button"></button>
         <ul class="footer__contact-list">
           <li class="footer__contact-item">
             <p class="footer__contact-text">г. Мытищи, Олимпийский проспект, д.10</p>
