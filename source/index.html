@@ -161,30 +161,44 @@
       <div class="container">
         <h2 class="product__title">Service Device предлагает следующие товары и услуги</h2>
         <div class="product__list">
+
           <a class="product__link" href="#">
-            <div class="no-webp product__item product__item--production">
-              <p class="product__item-title">Производство печатных плат</p>
-              <div class="product__item-btn">
-                <span>&gt;</span>
-              </div>
-            </div>
+            <!-- lazyload -->
+            <!-- 1х: 416; 2x: 832 -->
+            <picture>
+              <source media="(max-width: 767px)" data-srcset="img/production-mobile@2x.jpg 2x, img/production-mobile.jpg 1x">
+              <source media="(max-width: 767px)" type="image/webp" data-srcset="img/production-mobile@2x.webp 2x, img/production-mobile.webp 1x">
+              <source media="(max-width: 1023px)" data-srcset="img/production-tablet@2x.jpg 2x, img/production-tablet.jpg 1x">
+              <source media="(max-width: 1023px)" type="image/webp" data-srcset="img/production-tablet@2x.webp 2x, img/production-tablet.webp 1x">
+              <source type="image/webp" data-srcset="img/production@2x.webp 2x, img/production.webp 1x">
+              <img class="lazy" data-src="img/production.jpg" data-srcset="img/production@2x.jpg 2x" alt="Производство">
+            </picture>
+            <p class="product__item-title">Производство печатных плат</p>
           </a>
+
+          <!-- <a class="product__link" href="#">
+            <picture>
+              <source media="(max-width: 767px)" data-srcset="img/production-mobile@2x.jpg 2x, img/production-mobile.jpg 1x">
+              <source media="(max-width: 767px)" type="image/webp" data-srcset="img/production-mobile@2x.webp 2x, img/production-mobile.webp 1x">
+              <source media="(max-width: 1023px)" data-srcset="img/mounting-tablet@2x.jpg 2x, img/mounting-tablet.jpg 1x">
+              <source media="(max-width: 1023px)" type="image/webp" data-srcset="img/mounting-tablet@2x.webp 2x, img/mounting-tablet.webp 1x">
+              <source type="image/webp" data-srcset="img/mounting@2x.webp 2x, img/mounting.webp 1x">
+              <img class="lazy" data-src="img/mounting.jpg" data-srcset="img/mounting@2x.jpg 2x" alt="Монтаж">
+            </picture>
+            <p class="product__item-title">Монтаж печатных плат</p>
+          </a>
+
           <a class="product__link" href="#">
-            <div class="product__item product__item--mounting">
-              <p class="product__item-title">Монтаж печатных плат</p>
-              <div class="product__item-btn">
-                <span>&gt;</span>
-              </div>
-            </div>
-          </a>
-          <a class="product__link" href="#">
-            <div class="product__item product__item--extra">
-              <p class="product__item-title">Комплектующие для светотехники</p>
-              <div class="product__item-btn">
-                <span>&gt;</span>
-              </div>
-            </div>
-          </a>
+            <picture>
+              <source media="(max-width: 767px)" data-srcset="img/production-mobile@2x.jpg 2x, img/production-mobile.jpg 1x">
+              <source media="(max-width: 767px)" type="image/webp" data-srcset="img/production-mobile@2x.webp 2x, img/production-mobile.webp 1x">
+              <source media="(max-width: 1023px)" data-srcset="img/extra-tablet@2x.jpg 2x, img/extra-tablet.jpg 1x">
+              <source media="(max-width: 1023px)" type="image/webp" data-srcset="img/extra-tablet@2x.webp 2x, img/extra-tablet.webp 1x">
+              <source type="image/webp" data-srcset="img/extra@2x.webp 2x, img/extra.webp 1x">
+              <img class="lazy" data-src="img/extra.jpg" data-srcset="img/extra@2x.jpg 2x" alt="Комплектующие">
+            </picture>
+            <p class="product__item-title">Комплектующие для светотехники</p>
+          </a> -->
         </div>
       </div>
     </section>
