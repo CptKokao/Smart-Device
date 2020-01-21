@@ -126,6 +126,7 @@
 
 .footer__contact-list {
   display: block;
+  width: 100%;
 
   @media (max-width: $mobile-width) {
     display: none;
