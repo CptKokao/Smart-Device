@@ -85,9 +85,9 @@
 .intro__btn {
   @include btn();
 
-  width: 405px;
-  margin-left: 98px;
-  margin-top: 23px;
+  min-width: 410px;
+  margin-left: 95px;
+  margin-top: 20px;
 
   &:hover {
     background-color: transparent;
@@ -95,10 +95,10 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 379px;
-    padding: 15px 0;
-    margin-left: 50px;
-    margin-top: 34px;
+    min-width: 379px;
+    padding: 17px 0;
+    margin-left: 51px;
+    margin-top: 31px;
   }
 
   @media (max-width: $mobile-width) {
@@ -175,8 +175,8 @@
   font-family: $ptMono;
   display: block;
   position: absolute;
-  left: -40px;
-  bottom: -155px;
+  left: -35px;
+  bottom: -150px;
   transform: rotate(-90deg);
   opacity: 0.5;
   font-size: 14px;

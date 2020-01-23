@@ -1,5 +1,5 @@
 .header {
-  min-height: 875px;
+  min-height: 880px;
   padding-bottom: 30px;
   padding-top: 20px;
   background: $grey url("../img/bg-header.webp") center no-repeat;
@@ -78,9 +78,13 @@
       padding-right: -30px;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 25px;
+  }
 }
 
-.header__item--no_padding {
+.header__item--nopadding {
   @media (max-width: $tablet-width) {
     padding-right: 0;
   }
@@ -94,11 +98,15 @@
 }
 
 .header__item-text {
-  margin-left: 20px;
+  margin-left: 5px;
 
   @media (max-width: $tablet-width) {
     display: none;
   }
+}
+
+.header__item-text--padding {
+  margin-right: 40px;
 }
 
 .header__call {

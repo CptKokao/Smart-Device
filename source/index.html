@@ -25,7 +25,7 @@
       <div class="modal__close"></div>
 
       <!-- form -->
-      <form class="form modal__form" method="GET">
+      <form class="form modal__form form--nomargin" method="GET">
         <label class="visually-hidden" for="modal-name">Имя</label>
         <input type="text" name="modal-name" id="modal-name" placeholder="Имя" required autocomplete="on">
 
@@ -35,7 +35,7 @@
         <label class="visually-hidden" for="modal-message">Сообщение</label>
         <textarea name="message" id="modal-message" placeholder="Ваш вопрос" required></textarea>
 
-        <button type="submit">Задать вопрос</button>
+        <button type="submit">Отправить</button>
         <div class="form__group">
           <input id="modal" type="checkbox" checked>
           <label for="modal">Я согласен на обработку персональных данных</label>
@@ -63,10 +63,10 @@
           <li class="header__item">
             <a href="mailto:info@sd.ru">
               <img class="header__email-img" src="img/icon-email.svg" width="19" height="14" alt="Потча">
-              <span class="header__item-text">info@sd.ru</span>
+              <span class="header__item-text header__item-text--padding">info@sd.ru</span>
             </a>
           </li>
-          <li class="header__item header__item--no_padding">
+          <li class="header__item header__item--nopadding">
             <a href="tel:+7(495)0005252">
               <img class="header__phone-img" src="img/icon-phone.svg" width="18" height="18" alt="Телефон">
               <span class="header__item-text">+7 (495) 000 52 52</span>
@@ -321,16 +321,16 @@
         <button class="footer__btn footer__btn--position footer__btn--plus" id="btn-contact" aria-label="Открыть раздел наш офис" type="button"></button>
         <ul class="footer__contact-list">
           <li class="footer__contact-item">
-            <p class="footer__contact-text">г. Мытищи, Олимпийский проспект, д.10</p>
+            <a class="footer__contact-link">г. Мытищи, Олимпийский проспект, д.10</a>
           </li>
           <li class="footer__contact-item">
-            <p class="footer__contact-text">+7 (495) 589-40-50</p>
+            <a class="footer__contact-link" href="tel:+7(495)5894050">+7 (495) 589-40-50</a>
           </li>
           <li class="footer__contact-item">
-            <p class="footer__contact-text">+7 (925) 003-87-67</p>
+            <a class="footer__contact-link" href="tel:+7(925)0038767">+7 (925) 003-87-67</a>
           </li>
           <li class="footer__contact-item">
-            <p class="footer__contact-text">+7 (926) 926-080-79</p>
+            <a class="footer__contact-link" href="tel:+7(926)92608079">+7 (926) 926-080-79</a>
           </li>
         </ul>
       </div>
@@ -346,7 +346,7 @@
           <li class="extra-item extra-item--hidden">
             <p class="extra-text ">1999-2018 SD Service Devices</p>
           </li>
-          <li class="extra-item">
+          <li class="extra-item extra-item--margin">
             <p class="extra-text">Условия конфиденциальности</p>
           </li>
           <li class="extra-item">

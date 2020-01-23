@@ -59,6 +59,14 @@
   }
 }
 
+.extra-item--margin {
+  margin-left: 5%;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
 .extra-text {
   font-family: $ptMono;
   font-size: 13px;

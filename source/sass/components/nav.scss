@@ -17,6 +17,7 @@
   column-count: 2;
 
   @media (max-width: $tablet-width) {
+    margin-top: 25px;
     column-count: 1;
   }
 
@@ -26,10 +27,14 @@
 }
 
 .nav__link {
-  display: block;
+  display: inline-block;
   font-family: $ptMono;
   font-size: 15px;
   line-height: 25px;
   color: inherit;
   opacity: 0.5;
+
+  &:hover {
+    @include hover();
+  }
 }
